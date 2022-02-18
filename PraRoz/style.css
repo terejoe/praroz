@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: url("img/PraRoz.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    width: 100%;
+    top: 0px;
+    margin-top: 25px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+div.title{
+    width: 170px;
+    padding-left: 50px;
+    color: #ff7200;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.5;
+    float: left;
+}
+
+nav.navbar{
+    float: left;
+    width: 800px;
+    padding-top: 20px;    
+}
+
+.navlist li{
+    display: inline;
+    padding: 37px;
+
+}
+
+.navlist li a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: Arial;
+}
+
+.navlist li a:hover{
+    color: #ff7200;
+}
+
+/*RightNav*/
+.rightnav{
+    margin-top: 13px;
+}
+
+.srch{
+    border: 1px solid #ff7200;
+    background: transparent;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    margin: 0;
+    margin-top: 2px;
+}
+
+::placeholder { 
+    color: #fff;
+    opacity: 1;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 4px;
+}
+
+
+.btn-one{
+    padding: 8px 18px;
+    background-color: #ff7200; 
+    border: none;
+    display: inline-block;
+    border-radius: 0 3px 3px 0;
+    margin-left: -4.5px;
+    height: 35px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.btn-one a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/*Main Content*/
+div.main{
+    margin-top: 90px;
+    margin-left: 55px;
+}
+div.mainone{
+    color: #fff;
+    font-size: 51px;
+    font-weight:700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.maintwo{
+    color: #ff7200;
+    font-size: 60px;
+    font-weight:700;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1.5px;
+}
+
+p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 250;
+    font-family: 'Times New Roman', Times, serif;  
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+div.mainthree{
+    color: #fff;
+    font-size: 52px;
+    font-weight:700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-two{
+    margin-top: 20px;
+    padding: 8px;
+    background-color: #ff7200; 
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+.btn-two a{
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+/*Modal Box*/
+div.modalbox{
+    margin-left: 1020px;
+    margin-top: -320px;
+    position: fixed;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+.box{
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    width: 250px;
+    height: 330px;
+}
+
+.btn-three{
+    padding: 8px;
+    color: #ff7200;
+    background-color: #fff; 
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px;
+    justify-content: center;
+}
+
+.box input{
+    width: 240px;
+    height: 35px;
+    margin-top: 20px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+.box input::placeholder{
+    color: #a7a7a7a7;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-four{
+    margin-top: 25px;
+    padding: 8px;
+    background-color: #ff7200; 
+    border: none;
+    height: 35px;
+    width: 240px;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.btn-four a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+.btn-four:hover{
+    background-color: #fff;
+    color: #ff7200;
+}
+.box p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight:lighter;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+div.box p a{
+    color: #ff7200;
+    text-decoration: none;
+
+}
+
+/*Images*/
+.icons{
+    width: 180px;
+    justify-content: center;
+    margin-left: 40px;
+}
+.icons img{
+    padding-right: 12px;
+}
+
+
+/*Media Queries*/
+@media(max-width:1200px){
+    html{
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    header{
+        margin-left: 30px;
+    }
+
+    div.title{
+        width: 170px;
+        padding-left: 50px;
+        color: #ff7200;
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 1.5;
+        float: left;
+    }
+    
+    nav.navbar{
+        float: left;
+        width: 900px;
+        padding-top: 20px;    
+    }
+    
+    .navlist li{
+        display: inline;
+        padding: 39px;
+    
+    }
+    a{
+        font-size: 13px;
+    }
+
+    .rightnav{
+        margin-top: 80px;
+        margin-left: -700px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .srch{
+    margin-top:3px;
+    
+    }
+    
+    .main{
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    div.modalbox{
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 90px;
+        
+    }
+
+    p{
+        font-size: 0.5em;
+    }
+
+}
+
+@media(max-width:992px){
+    html{
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    div.title{
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    nav.navbar{
+        margin-top: 40px; 
+        width: 980px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+    }
+
+    .navlist {
+        margin-left: 35px;
+        display: inline;
+        float: left;
+        
+    }
+    .navlist li{
+        margin-left: 10px;
+        padding: 40px;
+    }
+    a{
+        font-size: 13px;
+    }
+
+    .rightnav{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 300px;
+    }
+
+    .srch{
+        margin-top: 3px;
+    }
+
+    .main{
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    div.modalbox{
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 90px;
+        
+    }
+
+    p{
+        font-size: 0.5em;
+    }
+
+}
+
+
+@media(max-width:768px){
+    html{
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    div.title{
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    nav.navbar{
+        margin-top: 30px; 
+        width: 640px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+    }
+
+    .navlist {
+        margin-left: 19px;
+        display: inline;
+        float: left;
+        
+    }
+    .navlist li{
+        margin-left: 10px;
+        padding: 30px;
+    }
+    a{
+        font-size: 13px;
+    }
+
+    .rightnav{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 200px;
+    }
+
+    .srch{
+        margin-top: 3px;
+    }
+
+    .main{
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    div.modalbox{
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 90px;
+        
+    }
+
+    p{
+        font-size: 0.5em;
+    }
+
+}
+@media(max-width:600px) {
+    html{
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+
+    div.title{
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    nav.navbar{
+        margin-top: 30px; 
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+    }
+        
+    .navlist {
+        margin-left: 15px;
+        display: inline;
+        float: left;
+        
+    }
+    .navlist li{
+        margin-left: 10px;
+        padding: 13px;
+    }
+    a{
+        font-size: 13px;
+    }
+
+    .rightnav{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 35px;
+    }
+
+    .srch{
+        margin-top: 3px;
+    }
+
+    .main{
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    div.modalbox{
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 90px;
+        
+    }
+
+    p{
+        font-size: 0.5em;
+    }
+    
+
+}
+
+
+
